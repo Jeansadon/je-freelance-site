@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>J.E. - Technicien IT Freelance</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Section Hero gamer/tech avec néons -->
+  <section class="relative bg-gradient-to-r from-blue-900 via-purple-900 to-blue-900 min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <h1 class="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 drop-shadow-lg">
+      J.E. - Technicien IT Freelance
+    </h1>
+    <p class="mt-6 text-xl md:text-2xl text-blue-300 max-w-xl">
+      Dépannage, cybersécurité, outils collaboratifs & +.
+    </p>
+    <a href="#contact" class="mt-12 inline-block bg-blue-600 hover:bg-purple-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg transition duration-300 transform hover:scale-105">
+      Me contacter
+    </a>
+    <!-- Néons animés -->
+    <div class="absolute inset-0 pointer-events-none">
+      <span class="block absolute w-96 h-96 bg-blue-500 rounded-full opacity-20 blur-3xl top-20 left-10 animate-pulse"></span>
+      <span class="block absolute w-72 h-72 bg-purple-600 rounded-full opacity-30 blur-2xl bottom-20 right-16 animate-pulse animation-delay-1000"></span>
+    </div>
+  </section>
+
+  <!-- Section services -->
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-semibold text-blue-300 mb-6 border-b border-blue-500 pb-2">💼 Mes services</h2>
+    <ul class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <li class="bg-gray-800 p-4 rounded-xl shadow-md hover:shadow-blue-500 transition-shadow cursor-default">🔧 Dépannage informatique</li>
+      <li class="bg-gray-800 p-4 rounded-xl shadow-md hover:shadow-blue-500 transition-shadow cursor-default">☁️ Mise en place d'outils collaboratifs (ex : Microsoft 365)</li>
+      <li class="bg-gray-800 p-4 rounded-xl shadow-md hover:shadow-blue-500 transition-shadow cursor-default">🔐 Sécurité réseau (VPN, chiffrement, accès sécurisé)</li>
+      <li class="bg-gray-800 p-4 rounded-xl shadow-md hover:shadow-blue-500 transition-shadow cursor-default">📦 Gestion de parc informatique</li>
+      <li class="bg-gray-800 p-4 rounded-xl shadow-md hover:shadow-blue-500 transition-shadow cursor-default">💡 Conseil IT sur mesure</li>
+      <li class="bg-gray-800 p-4 rounded-xl shadow-md hover:shadow-blue-500 transition-shadow cursor-default">🌐 Création de site web moderne et responsive</li>
+    </ul>
+  </section>
+
+  <!-- Section à propos -->
+  <section class="max-w-3xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-semibold text-blue-300 mb-4 border-b border-blue-500 pb-2">🧠 À propos</h2>
+    <p class="text-gray-300 leading-relaxed">
+      Je m'appelle J.E., technicien IT passionné. J'interviens sur la gestion de parcs, la cybersécurité, et les solutions collaboratives, que je déploie en fonction des besoins clients. Mon approche ? Rigueur, autonomie et passion, comme dans une team bien organisée. 🎮💻
+    </p>
+  </section>
+
+  <!-- Section contact -->
+  <section id="contact" class="max-w-xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-semibold text-blue-300 mb-4 border-b border-blue-500 pb-2">📬 Me contacter</h2>
+
+    <!-- Message de confirmation (masqué par défaut) -->
+    <div id="confirmation" class="bg-green-600 text-white font-semibold p-4 rounded-xl mb-4 text-center opacity-0 scale-95 transition duration-700 transform">
+      ✅ Merci pour votre message ! Je vous recontacterai très bientôt. 🚀
+    </div>
+
+    <form action="https://formspree.io/f/meogywgg" method="POST" class="bg-gray-800 p-6 rounded-xl shadow-lg space-y-4">
+      <input type="text" name="name" placeholder="Votre nom" required class="w-full p-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <input type="email" name="email" placeholder="Votre email" required class="w-full p-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <textarea name="message" rows="5" placeholder="Votre message" required class="w-full p-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      <button type="submit" class="bg-blue-600 hover:bg-purple-600 text-white px-6 py-3 rounded-xl font-semibold shadow-md transition duration-300 transform hover:scale-105">
+        Envoyer
+      </button>
+    </form>
+  </section>
+
+  <footer class="text-center py-6 text-gray-500">
+    © 2025 J.E. | Site freelance tech
+  </footer>
+
+  <!-- Script pour gérer l'affichage du message de confirmation -->
+  <script>
+    const form = document.querySelector("form");
+    const confirmation = document.getElementById("confirmation");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const data = new FormData(form);
+
+      fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      }).then(response => {
+        if (response.ok) {
+          form.reset();
+
+          confirmation.classList.remove("opacity-0", "scale-95");
+          confirmation.classList.add("opacity-100", "scale-100");
+
+          setTimeout(() => {
+            confirmation.classList.remove("opacity-100", "scale-100");
+            confirmation.classList.add("opacity-0", "scale-95");
+          }, 5000);
+        } else {
+          alert("Une erreur s'est produite. Veuillez réessayer.");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
