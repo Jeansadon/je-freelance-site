@@ -2,7 +2,7 @@
 
 Professionnel de l'infrastructure informatique, spécialisé dans l'installation, la configuration, la maintenance et le dépannage d'environnements virtualisés, réseaux complexes et services critiques.
 
-Mon approche repose sur l'**analyse structurée des incidents** et la **production de solutions techniques robustes**.
+Mon approche repose sur l'**analyse structurée des incidents** et la **production de solutions techniques robustes et vérifiables**.
 
 ---
 
@@ -10,29 +10,30 @@ Mon approche repose sur l'**analyse structurée des incidents** et la **producti
 
 Voici les technologies et domaines sur lesquels j'interviens :
 
-### Systèmes & Virtualisation
-* **Systèmes :** Windows Server (AD, DNS, DHCP, GPO), Linux (Debian, Ubuntu, CentOS).
-* **Virtualisation :** Hyper-V, VMware ESXi, Administration de conteneurs Docker.
+### Systèmes, Virtualisation & Continuité
+* **Systèmes :** Windows Server (AD, DNS, DHCP, GPO), Linux (Debian, Ubuntu, CentOS), PowerShell, Bash.
+* **Virtualisation :** Hyper-V, VMware ESXi, **Proxmox VE (PVE)** - Gestion de clusters HA et LXC.
+* **Sauvegardes :** Stratégies de BCP/DRP et mise en œuvre (Veeam Backup & Replication).
+
+### Réseau, Routage & Sécurité
+* **Réseau :** Configuration L2/L3, **VLAN**, Routage (statique/dynamique), QoS.
+* **Sécurité :** Firewall (pfSense/Fortinet), VPN (IPsec, OpenVPN), Audit de règles de flux.
+* **Diagnostic :** Analyse de flux réseau, résolution des problèmes de connectivité et performance.
+
+### Administration & Plateformes Web Technique
+* **Supervision :** Mise en place et gestion de solutions proactives (Zabbix, Prometheus/Grafana).
+* **Déploiement Web :** Hébergement et administration de plateformes Web performantes (NGINX/Apache).
+* **Maintenance Web :** Configuration DNS, SSL, optimisation de performance (Tailwind CSS, SSG).
 * **Services Cloud :** (Si applicable : Azure, AWS - à détailler).
-
-### Réseau & Sécurité
-* **Réseau :** VLAN, Routage (statique/dynamique), Configuration L2/L3.
-* **Sécurité :** Firewall (pfSense/Fortinet/autres), VPN (IPsec, OpenVPN), Wi-Fi sécurisé.
-* **Diagnostic :** Analyse de flux, Résolution des problèmes de connectivité et performance.
-
-### Administration & Maintien Opérationnel
-* **Supervision :** Mise en place et gestion de solutions (Zabbix, Prometheus/Grafana).
-* **Sauvegardes :** Stratégies et mise en œuvre (Veeam Backup & Replication).
-* **Scripting :** Automatisation des tâches (PowerShell, Bash).
 
 ---
 
 ## 🔎 Objectif de ce Dépôt
 
-Ce dépôt sert de **Portfolio Technique Opérationnel** :
-1.  **Études de Cas :** Documentation de résolutions d'incidents complexes (Diagnostic > Solution > Validation).
-2.  **Procédures :** Exemples de documentation technique et de cahiers des charges.
-3.  **Code :** Scripts d'automatisation (PowerShell/Bash) pour l'administration.
+Ce dépôt sert de **vitrine technique et opérationnelle** pour :
+1.  **Code :** Mise à disposition de scripts d'automatisation (PowerShell/Bash) pour l'administration.
+2.  **Documentation :** Partage d'exemples de procédures techniques et de cahiers des charges.
+3.  **Portfolio :** Hébergement du site professionnel détaillant l'offre de services.
 
 > **Priorité Absolue :** Exactitude technique, cohérence et détails opérationnels.
 
@@ -42,4 +43,4 @@ Ce dépôt sert de **Portfolio Technique Opérationnel** :
 
 * **Site Web (Portfolio) :** [Lien vers votre GitHub Pages]
 * **LinkedIn :** [Votre URL LinkedIn]
-* **Email :** [sadon.edmond@gmail.com]
+* **Email :** sadon.edmond@gmail.com
