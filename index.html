@@ -8,49 +8,58 @@
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans"> 
     
-    <!-- 1. HEADER ET NAVIGATION (Lien PROJETS supprimé) -->
+    <!-- 1. HEADER ET NAVIGATION -->
     <header class="bg-blue-900 text-white shadow-lg">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
             <h1 class="text-2xl font-bold tracking-wider">
-                JEAN SADON | Infrastructure
+                JEAN SADON | Infrastructure & Matériel
             </h1>
             <nav>
-                <!-- Ne garde que Compétences et Contact -->
-                <a href="#competences" class="text-sm font-semibold hover:text-blue-300 ml-6 transition duration-150">COMPÉTENCES</a>
+                <!-- Navigation simplifiée : Compétences, Processus et Contact -->
+                <a href="#competences" class="text-sm font-semibold hover:text-blue-300 ml-6 transition duration-150">SERVICES</a>
+                <a href="#processus" class="text-sm font-semibold hover:text-blue-300 ml-6 transition duration-150">MÉTHODE</a>
                 <a href="#contact" class="text-sm font-semibold hover:text-blue-300 ml-6 transition duration-150">CONTACT</a>
             </nav>
         </div>
     </header>
 
-    <!-- 2. SECTION PROFIL (HERO) - Astérisques retirées et remplacées par <strong> -->
+    <!-- 2. SECTION PROFIL (HERO) -->
     <section id="profil" class="bg-white shadow-xl py-20 px-6 text-center">
+        <!-- Rétablissement du titre principal concis et percutant -->
         <h2 class="text-5xl font-extrabold text-blue-800 tracking-tight">
             Technicien Systèmes & Réseaux. Diagnostic et Maintenance Critique.
         </h2>
-        <p class="mt-6 text-xl text-gray-600 max-w-2xl mx-auto">
-            Expertise factuelle en <strong>Windows Server (AD, GPO), Virtualisation (Hyper-V/Proxmox), Routage VLAN et Sécurité Firewall (pfSense/Fortinet)</strong>.
+        
+        <!-- Expertise affichée de manière plus centrale et compacte -->
+        <p class="mt-8 text-xl text-gray-600 max-w-3xl mx-auto">
+            Expertise factuelle en <strong>Windows Server (AD, GPO), Virtualisation (Hyper-V/Proxmox), Routage VLAN et Sécurité Firewall (pfSense/Fortinet)</strong>. Je sécurise votre infrastructure IT et la maintiens en performance maximale.
         </p>
-        <p class="mt-2 text-lg text-gray-500 max-w-2xl mx-auto">
-            Approche basée sur l'analyse structurée et la mise en œuvre de procédures vérifiables.
+        
+        <!-- Approche méthodologique -->
+        <p class="mt-4 text-lg text-gray-500 max-w-xl mx-auto">
+            Approche basée sur l'analyse structurée et la mise en œuvre de procédures vérifiables pour <strong>une solution pérenne</strong>.
         </p>
-        <a href="#contact" class="mt-10 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-md shadow-md transition duration-300">
-            Demander un Audit
+        
+        <!-- Rétablissement du bouton 'Découvrir Ma Méthode de Travail' -->
+        <a href="#processus" class="mt-12 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-10 py-4 rounded-md shadow-lg transition duration-300">
+            Découvrir Ma Méthode de Travail
         </a>
     </section>
 
-    <!-- 3. SECTION OFFRE FACTUELLE ET COMPÉTENCES CLÉS (Nouvelle structure détaillée) -->
+    <!-- 3. SECTION OFFRE FACTUELLE ET COMPÉTENCES CLÉS (Maintenant 4 blocs) -->
     <section id="competences" class="max-w-6xl mx-auto px-4 py-16 bg-gray-50">
         <h2 class="text-3xl font-bold text-blue-800 mb-10 border-b-4 border-blue-600 pb-2 inline-block">🚀 Offre de Services Techniques</h2>
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-700">
+        <!-- Utilisez grid-cols-2 pour que les blocs restent visibles, et md:grid-cols-4 pour la version desktop -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-gray-700">
             
             <!-- Bloc 1 : Systèmes, Virtualisation & Continuité (Proxmox inclus) -->
             <article class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-600">
                 <h3 class="text-xl font-semibold mb-3 text-blue-800">Systèmes & Virtualisation Critique</h3>
                 <ul class="list-disc list-inside space-y-2 text-sm">
-                    <li>Administration <strong>Windows Server</strong> (AD, GPO, DNS, DHCP) et <strong>Linux</strong> (Debian/Ubuntu).</li>
+                    <li>Administration <strong>Windows Server</strong> (AD, GPO, DNS, DHCP) et <strong>Linux</strong>.</li>
                     <li>Déploiement d'hyperviseurs : <strong>Hyper-V, VMware ESXi</strong> et <strong>Proxmox VE (PVE)</strong>.</li>
-                    <li>Mise en œuvre de solutions de <strong>Haute Disponibilité</strong> (Cluster HA) et <strong>Conteneurisation</strong> (Docker, LXC).</li>
+                    <li>Mise en œuvre de solutions de <strong>Haute Disponibilité</strong> (Cluster HA).</li>
                     <li>Gestion des stratégies de <strong>Sauvegarde (Veeam)</strong> et de récupération d'urgence (DRP).</li>
                 </ul>
             </article>
@@ -62,7 +71,7 @@
                     <li>Configuration avancée des switches L2/L3 (<strong>VLAN, routage statique/dynamique</strong>).</li>
                     <li>Déploiement et gestion des firewalls : <strong>pfSense, Fortinet, IPsec/OpenVPN</strong>.</li>
                     <li>Audit et sécurisation des accès Wi-Fi professionnels et des <strong>règles de flux</strong>.</li>
-                    <li><strong>Diagnostic et Analyse structurée</strong> des problèmes de latence et de connectivité.</li>
+                    <li><strong>Diagnostic et Analyse structurée</strong> des problèmes de latence.</li>
                 </ul>
             </article>
             
@@ -73,27 +82,102 @@
                     <li>Mise en place de solutions de <strong>Supervision proactive</strong> (Zabbix, Prometheus/Grafana).</li>
                     <li><strong>Scripting d'administration</strong> pour l'automatisation (PowerShell, Bash).</li>
                     <li>Hébergement et administration de plateformes Web performantes (NGINX/Apache).</li>
-                    <li>Intégration de sites <strong>responsives</strong> (Tailwind CSS, SSG) pour une performance optimale.</li>
+                    <li>Intégration de sites <strong>responsives</strong> (Tailwind CSS, SSG).</li>
+                </ul>
+            </article>
+
+            <!-- NOUVEAU BLOC 4 : Matériel Physique & Conseil (Montage PC) -->
+            <article class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-600">
+                <h3 class="text-xl font-semibold mb-3 text-blue-800">Matériel Physique & Conseil PC</h3>
+                <ul class="list-disc list-inside space-y-2 text-sm">
+                    <!-- Remplacement des ** par <strong> -->
+                    <li><strong>Montage de PC</strong> professionnel ou gaming sur mesure, en fonction du budget.</li>
+                    <li><strong>Optimisation</strong> thermique et logicielle pour des performances maximales.</li>
+                    <li>Conseil et fourniture de <strong>liste de matériel</strong> (PC, Serveurs, Périphériques).</li>
+                    <li><strong>Dépannage avancé</strong> de postes de travail et serveurs physiques.</li>
                 </ul>
             </article>
             
         </div>
     </section>
 
-    <!-- La SECTION PROJETS (4) est maintenant SUPPRIMÉE -->
+    <!-- 4. SECTION : PROCESSUS D'INTERVENTION (SIMPLIFIÉ) -->
+    <section id="processus" class="max-w-6xl mx-auto px-4 py-16 bg-white">
+        <!-- Titre renforcé -->
+        <h2 class="text-3xl font-bold text-gray-800 mb-12 border-b-4 border-blue-600 pb-2 inline-block">🎯 Méthode d'Intervention Structurée</h2>
+        
+        <p class="text-lg text-gray-700 mb-8 max-w-4xl mx-auto text-center">
+            Qu'il s'agisse d'un incident critique ou d'un projet d'évolution, l'application de ces quatre étapes garantit un résultat technique fiable, traçable et pérenne.
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            
+            <!-- Étape 1 : Diagnostic / Analyse du Besoin -->
+            <div class="p-6 rounded-xl shadow-xl bg-blue-50 border-b-4 border-blue-600 hover:shadow-2xl transition duration-300">
+                <div class="text-4xl font-extrabold text-blue-600 mb-3">01</div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Diagnostic de la Cause Racine</h3>
+                <p class="text-sm text-gray-700">Identification sans concession de l'origine de l'incident ou définition précise du cahier des charges matériel (besoin vs budget).</p>
+            </div>
 
-    <!-- 5. SECTION CONTACT -->
-    <section id="contact" class="max-w-xl mx-auto px-4 py-12 bg-white rounded-lg shadow-lg">
+            <!-- Étape 2 : Planification -->
+            <div class="p-6 rounded-xl shadow-xl bg-blue-50 border-b-4 border-blue-600 hover:shadow-2xl transition duration-300">
+                <div class="text-4xl font-extrabold text-blue-600 mb-3">02</div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Planification et Validation</h3>
+                <p class="text-sm text-gray-700">Proposition d'un plan d'action (étapes, risques, devis) pour validation et consensus technique avant exécution.</p>
+            </div>
+
+            <!-- Étape 3 : Exécution -->
+            <div class="p-6 rounded-xl shadow-xl bg-blue-50 border-b-4 border-blue-600 hover:shadow-2xl transition duration-300">
+                <div class="text-4xl font-extrabold text-blue-600 mb-3">03</div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Mise en Œuvre et Tests Unitaires</h3>
+                <p class="text-sm text-gray-700">Application méthodique des correctifs ou configuration. Exécution de tests rigoureux pour garantir la stabilité et la performance.</p>
+            </div>
+
+            <!-- Étape 4 : Documentation -->
+            <div class="p-6 rounded-xl shadow-xl bg-blue-50 border-b-4 border-blue-600 hover:shadow-2xl transition duration-300">
+                <div class="text-4xl font-extrabold text-blue-600 mb-3">04</div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Livraison et Documentation</h3>
+                <p class="text-sm text-gray-700">Fourniture d'un livrable technique complet (schémas, procédures, configurations) pour la traçabilité et l'autonomie future.</p>
+            </div>
+
+        </div>
+        <div class="text-center mt-12">
+             <a href="#contact" class="inline-block bg-gray-700 hover:bg-gray-800 text-white font-semibold px-8 py-3 rounded-md shadow-lg transition duration-300">
+                Discuter de Votre Projet
+            </a>
+        </div>
+    </section>
+
+    <!-- 5. SECTION CONTACT (Mise à jour pour Gemini) -->
+    <section id="contact" class="max-w-xl mx-auto px-4 py-12 bg-gray-100 rounded-lg">
         <h2 class="text-2xl font-bold text-blue-800 mb-4 border-b border-gray-300 pb-2">📬 Contact Opérationnel</h2>
 
         <div id="confirmation" class="bg-green-600 text-white font-semibold p-4 rounded-xl mb-4 text-center opacity-0 scale-95 transition duration-700 transform">
             ✅ Merci pour votre message. Analyse de la demande en cours.
         </div>
 
-        <form action="https://formspree.io/f/meogywgg" method="POST" class="bg-gray-100 p-6 rounded-xl space-y-4">
+        <form action="https://formspree.io/f/meogywgg" method="POST" class="bg-white p-6 rounded-xl shadow-lg space-y-4" id="contact-form">
             <input type="text" name="name" placeholder="Nom de l'entreprise ou contact" required class="w-full p-3 rounded border border-gray-300 bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500">
             <input type="email" name="email" placeholder="Email professionnel" required class="w-full p-3 rounded border border-gray-300 bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500">
-            <textarea name="message" rows="5" placeholder="Objet de l'intervention ou du diagnostic requis" required class="w-full p-3 rounded border border-gray-300 bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            <textarea name="message" rows="5" placeholder="Objet de l'intervention ou du diagnostic requis (ex: Panne pfSense, Audit Virtualisation, Projet PC Gaming)" required class="w-full p-3 rounded border border-gray-300 bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500" id="client-message"></textarea>
+            
+            <!-- Description de la fonction Gemini pour le client (plus concise) -->
+            <p class="text-xs text-gray-500 text-center pt-2">
+                Utilisez l'outil d'IA ci-dessous pour générer une fiche de triage technique structurée, basée sur votre description.
+            </p>
+
+            <!-- Bouton pour la fonctionnalité Gemini -->
+            <button type="button" id="analyze-button" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-md font-semibold shadow-md transition duration-300 w-full flex items-center justify-center">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112.7 1h.06l1.267 2.112 1.34 1.139a1 1 0 01.385.503l.633 1.948.74 1.636a1 1 0 010 .804l-.74 1.636-.633 1.948a1 1 0 01-.385.503l-1.34 1.139-1.267 2.112a1 1 0 01-1.39.046l-1.636-.74-.804-.363a1 1 0 01-.503-.385l-1.139-1.34-2.112-1.267a1 1 0 01-.046-1.39l.74-1.636.363-.804a1 1 0 01.385-.503l1.34-1.139 2.112-1.267z" clip-rule="evenodd"></path></svg>
+                Générer Fiche de Triage Technique (AI)
+            </button>
+            
+            <!-- Zone d'affichage de l'analyse Gemini -->
+            <div id="analysis-output" class="mt-4 hidden p-4 bg-gray-50 border border-gray-200 rounded-lg">
+                <h3 class="font-bold text-gray-800 mb-2">Fiche de Triage Technique Préliminaire</h3>
+                <pre id="analysis-content" class="whitespace-pre-wrap text-sm text-gray-700 font-mono"></pre>
+            </div>
+            
             <button type="submit" class="bg-blue-600 hover:bg-blue-800 text-white px-6 py-3 rounded-md font-semibold shadow-md transition duration-300 w-full">
                 Soumettre la Demande
             </button>
@@ -105,50 +189,204 @@
         <p class="text-white">&copy; 2025 Jean SADON – Infrastructure IT | Rigueur Technique Garantie.</p>
     </footer>
 
-    <!-- Script de confirmation Formspree -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const form = document.querySelector('form');
-            const confirmation = document.getElementById('confirmation');
-            
-            form.addEventListener('submit', async (e) => {
-                // Empêche la soumission classique pour gérer la redirection
-                e.preventDefault();
-                
-                const formData = new FormData(form);
-                
+    <!-- Scripts pour Formspree, Firebase et l'API Gemini -->
+    <script type="module">
+        // --- Configuration Firebase (Obligatoire pour l'environnement) ---
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { setLogLevel } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        const firebaseConfig = JSON.parse(typeof __firebase_config !== 'undefined' ? __firebase_config : '{}');
+        const apiKey = ""; // La clé API est fournie par l'environnement Canvas
+
+        if (Object.keys(firebaseConfig).length > 0) {
+            setLogLevel('Debug');
+            const app = initializeApp(firebaseConfig);
+            const auth = getAuth(app);
+
+            const authenticate = async () => {
                 try {
-                    const response = await fetch(form.action, {
-                        method: form.method,
-                        body: formData,
-                        headers: {
-                            'Accept': 'application/json'
-                        }
-                    });
-
-                    if (response.ok) {
-                        // Afficher la confirmation
-                        confirmation.classList.remove('opacity-0', 'scale-95');
-                        confirmation.classList.add('opacity-100', 'scale-100');
-                        
-                        // Cacher la confirmation après 5 secondes
-                        setTimeout(() => {
-                            confirmation.classList.remove('opacity-100', 'scale-100');
-                            confirmation.classList.add('opacity-0', 'scale-95');
-                        }, 5000);
-
-                        // Effacer le formulaire
-                        form.reset();
+                    if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+                        await signInWithCustomToken(auth, __initial_auth_token);
+                        console.log("Authentification réussie avec jeton personnalisé.");
                     } else {
-                        // Gérer l'erreur si la réponse n'est pas OK
-                        console.error('Erreur lors de la soumission du formulaire.');
-                        // Alternative : afficher un message d'erreur à la place de la confirmation
+                        await signInAnonymously(auth);
+                        console.log("Authentification anonyme réussie.");
                     }
                 } catch (error) {
-                    console.error('Erreur réseau ou lors de la soumission :', error);
-                    // Alternative : afficher un message d'erreur
+                    console.error("Erreur d'authentification Firebase:", error);
                 }
-            });
+            };
+            authenticate();
+        } else {
+            console.warn("Configuration Firebase non disponible. Poursuite sans configuration d'authentification explicite.");
+        }
+
+        // --- Fonction d'appel à l'API Gemini ---
+        const GEMINI_MODEL = "gemini-2.5-flash-preview-09-2025";
+        const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${apiKey}`;
+
+        const callGeminiApi = async (userPrompt, systemInstruction, retries = 5) => {
+            const payload = {
+                contents: [{ parts: [{ text: userPrompt }] }],
+                tools: [{ "google_search": {} }], // Utilisation du grounding pour des informations tech à jour
+                systemInstruction: { parts: [{ text: systemInstruction }] },
+            };
+
+            for (let i = 0; i < retries; i++) {
+                try {
+                    const response = await fetch(API_URL, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (!response.ok) {
+                        if (response.status === 429 && i < retries - 1) {
+                            throw new Error(`Rate limit exceeded, retrying in ${2 ** i}s...`);
+                        }
+                        const errorBody = await response.json();
+                        console.error("Erreur API:", errorBody);
+                        throw new Error(`Échec de l'API avec statut ${response.status}`);
+                    }
+
+                    const result = await response.json();
+                    const candidate = result.candidates?.[0];
+
+                    if (candidate && candidate.content?.parts?.[0]?.text) {
+                        const text = candidate.content.parts[0].text;
+                        let sources = [];
+                        const groundingMetadata = candidate.groundingMetadata;
+                        
+                        if (groundingMetadata && groundingMetadata.groundingAttributions) {
+                            sources = groundingMetadata.groundingAttributions
+                                .map(attr => ({ uri: attr.web?.uri, title: attr.web?.title }))
+                                .filter(source => source.uri && source.title);
+                        }
+                        
+                        return { text, sources };
+                    } else {
+                        console.error("La réponse Gemini ne contient pas de contenu:", result);
+                        return { text: "Erreur: Le modèle n'a pas pu générer d'analyse. Veuillez réessayer ou soumettre la demande directement.", sources: [] };
+                    }
+
+                } catch (error) {
+                    if (i === retries - 1) {
+                        console.error("Nombre max de tentatives atteint. Échec de l'appel API.", error);
+                        return { text: `Erreur critique: Échec de l'appel API après ${retries} tentatives.`, sources: [] };
+                    }
+                    const delay = 2 ** i * 1000;
+                    await new Promise(resolve => setTimeout(resolve, delay));
+                }
+            }
+        };
+
+        // --- Logique d'Analyse de la Demande (Gemini Feature) ---
+        const analyzeRequest = async () => {
+            const messageInput = document.getElementById('client-message');
+            const analyzeButton = document.getElementById('analyze-button');
+            const analysisOutput = document.getElementById('analysis-output');
+            const analysisContent = document.getElementById('analysis-content');
+            
+            const promptText = messageInput.value.trim();
+
+            if (!promptText) {
+                // Message box personnalisé
+                analysisContent.innerHTML = "Veuillez décrire votre demande technique dans la zone de texte avant de lancer l'analyse.";
+                analysisOutput.classList.remove('hidden');
+                return;
+            }
+
+            // UI Feedback: Loading state
+            analyzeButton.disabled = true;
+            analyzeButton.innerHTML = `<svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> Analyse en cours...`;
+            analysisOutput.classList.remove('hidden');
+            analysisContent.innerHTML = 'Analyse de la demande client en cours. Préparation de la fiche de triage...';
+
+            const systemInstruction = `Vous êtes un assistant IA pour Jean SADON, un Technicien Systèmes & Réseaux de Niveau 3. Votre rôle est d'analyser le message libre du client (décrivant un problème, un besoin ou un projet IT) et de générer une fiche de triage technique structurée en français.
+
+La fiche doit être formatée de la manière suivante, en utilisant des balises Markdown simples pour la mise en forme (gras, listes) :
+
+**Synthèse du Problème/Projet :** Une phrase concise décrivant l'enjeu principal.
+
+**Domaines Techniques Impliqués :** Liste des compétences requises (Réseau, Virtualisation, Serveur Windows, Sécurité, Matériel, etc.).
+
+**Questions Clés pour l'Audit (Max 3) :** Les 3 questions techniques les plus critiques pour démarrer le diagnostic.
+
+La réponse doit être purement factuelle et technique.`;
+
+            const result = await callGeminiApi(promptText, systemInstruction);
+
+            let outputHtml = result.text;
+            
+            if (result.sources && result.sources.length > 0) {
+                // Ajout des sources de manière plus conviviale
+                outputHtml += "\n\n**Sources consultées :**\n";
+                result.sources.forEach((source) => {
+                    const title = source.title.length > 50 ? source.title.substring(0, 50) + '...' : source.title;
+                    outputHtml += `* [${title}](${source.uri})\n`;
+                });
+            }
+
+            // Display result - conversion simple de markdown/newlines pour le pre-wrap
+            analysisContent.innerHTML = outputHtml
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Gras Markdown
+                .replace(/\n/g, '<br>');
+            
+            // Restore button state
+            analyzeButton.disabled = false;
+            analyzeButton.innerHTML = `<svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112.7 1h.06l1.267 2.112 1.34 1.139a1 1 0 01.385.503l.633 1.948.74 1.636a1 1 0 010 .804l-.74 1.636-.633 1.948a1 1 0 01-.385.503l-1.34 1.139-1.267 2.112a1 1 0 01-1.39.046l-1.636-.74-.804-.363a1 1 0 01-.503-.385l-1.139-1.34-2.112-1.267a1 1 0 01-.046-1.39l.74-1.636.363-.804a1 1 0 01.385-.503l1.34-1.139 2.112-1.267z" clip-rule="evenodd"></path></svg> Générer Fiche de Triage Technique (AI)`;
+        };
+
+
+        // --- Gestionnaire d'Événements Général (Formspree et Analyse) ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.querySelector('#contact-form');
+            const confirmation = document.getElementById('confirmation');
+            const analyzeButton = document.getElementById('analyze-button');
+
+            if (analyzeButton) {
+                analyzeButton.addEventListener('click', analyzeRequest);
+            }
+            
+            // Logique de soumission Formspree
+            if (form) {
+                form.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    
+                    const formData = new FormData(form);
+                    
+                    try {
+                        const response = await fetch(form.action, {
+                            method: form.method,
+                            body: formData,
+                            headers: {
+                                'Accept': 'application/json'
+                            }
+                        });
+
+                        if (response.ok) {
+                            // Afficher la confirmation
+                            confirmation.classList.remove('opacity-0', 'scale-95');
+                            confirmation.classList.add('opacity-100', 'scale-100');
+                            
+                            // Cacher la confirmation après 5 secondes
+                            setTimeout(() => {
+                                confirmation.classList.remove('opacity-100', 'scale-100');
+                                confirmation.classList.add('opacity-0', 'scale-95');
+                            }, 5000);
+
+                            // Effacer le formulaire et masquer l'analyse
+                            form.reset();
+                            document.getElementById('analysis-output').classList.add('hidden');
+                        } else {
+                            console.error('Erreur lors de la soumission du formulaire.');
+                        }
+                    } catch (error) {
+                        console.error('Erreur réseau ou lors de la soumission :', error);
+                    }
+                });
+            }
         });
     </script>
 

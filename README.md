@@ -1,55 +1,53 @@
-Jean SADON - Technicien Systèmes & Réseaux
+Site Web Professionnel - Jean SADON (Technicien Systèmes & Réseaux Freelance)
 
-Professionnel de l'infrastructure informatique, spécialisé dans l'installation, la configuration, la maintenance et le dépannage d'environnements virtualisés, réseaux complexes et services critiques.
+Ce dépôt contient le code source du site web professionnel de Jean SADON, dédié aux services d'infrastructure IT, de diagnostic réseau et de maintenance critique.
 
-Mon approche repose sur l'analyse structurée des incidents et la production de solutions techniques robustes et vérifiables.
+🚀 Objectif du Site
 
-🛠️ Domaines d'Expertise Technique
+Le site sert de vitrine numérique pour présenter l'expertise technique factuelle de Jean SADON dans les domaines suivants :
 
-Voici les technologies et domaines sur lesquels j'interviens :
+Systèmes & Virtualisation : Windows Server (AD, GPO), Linux, Hyper-V, Proxmox VE.
 
-Systèmes, Virtualisation & Continuité
+Réseau & Sécurité : Routage VLAN, Firewalls (pfSense, Fortinet), VPN.
 
-Systèmes : Windows Server (AD, DNS, DHCP, GPO), Linux (Debian, Ubuntu, CentOS), PowerShell, Bash.
+Opérations : Supervision proactive, Scripting d'automatisation (PowerShell, Bash).
 
-Virtualisation : Hyper-V, VMware ESXi, Proxmox VE (PVE) - Gestion de clusters HA et LXC.
+Matériel : Montage et optimisation de PC/Serveurs sur mesure.
 
-Sauvegardes : Stratégies de BCP/DRP et mise en œuvre (Veeam Backup & Replication).
+Il inclut un formulaire de contact avancé avec une fonctionnalité d'Intelligence Artificielle (IA) pour générer une fiche de triage technique préliminaire à partir de la description du client.
 
-Réseau, Routage & Sécurité
+🛠️ Technologies Utilisées
 
-Réseau : Configuration L2/L3, VLAN, Routage (statique/dynamique), QoS.
+Ce projet est une application web statique minimaliste, conçue pour la performance et la simplicité de déploiement.
 
-Sécurité : Firewall (pfSense/Fortinet), VPN (IPsec, OpenVPN), Audit de règles de flux.
+HTML5 : Structure de base du contenu.
 
-Diagnostic : Analyse de flux réseau, résolution des problèmes de connectivité et performance.
+Tailwind CSS (CDN) : Utilisation exclusive de classes utilitaires pour un design responsive, moderne et épuré.
 
-Administration & Plateformes Web Technique
+JavaScript (ESM) :
 
-Supervision : Mise en place et gestion de solutions proactives (Zabbix, Prometheus/Grafana).
+Gestion de la soumission de formulaire (via Formspree).
 
-Déploiement Web : Hébergement et administration de plateformes Web performantes (NGINX/Apache).
+Implémentation de la fonctionnalité d'Analyse de Demande IA via l'API Google Gemini pour le triage technique.
 
-Maintenance Web : Configuration DNS, SSL, optimisation de performance (Tailwind CSS, SSG).
+Configuration légère de l'authentification Firebase (pour l'environnement Canvas).
 
-Services Cloud : (Si applicable : Azure, AWS - à détailler).
+💡 Fonctionnalité IA (Triage Technique)
 
-🔎 Objectif de ce Dépôt
+La section "Contact Opérationnel" intègre un bouton Générer Fiche de Triage Technique (AI).
 
-Ce dépôt sert de vitrine technique et opérationnelle pour :
+Cette fonctionnalité appelle l'API Gemini pour analyser le message du client et structurer les informations en :
 
-Code : Mise à disposition de scripts d'automatisation (PowerShell/Bash) pour l'administration.
+Synthèse du Problème/Projet.
 
-Documentation : Partage d'exemples de procédures techniques et de cahiers des charges.
+Domaines Techniques Impliqués.
 
-Portfolio : Hébergement du site professionnel détaillant l'offre de services.
+Questions Clés pour l'Audit (Max 3).
 
-Priorité Absolue : Exactitude technique, cohérence et détails opérationnels.
+Ceci permet une qualification rapide et rigoureuse de la demande avant la prise de contact.
 
-🔗 Contact Professionnel
+📦 Déploiement
 
-Site Web (Portfolio) : [Lien vers votre GitHub Pages]
+Le site est conçu pour être déployé en tant que fichier unique index.html sur n'importe quel hébergement statique (Netlify, GitHub Pages, Apache, Nginx, etc.).
 
-LinkedIn : [Votre URL LinkedIn]
-
-Email : sadon.edmond@gmail.com
+Ce document sert de référence rapide pour le contenu et les technologies du site web.
