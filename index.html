@@ -1,89 +1,156 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jean SADON | Technicien Systèmes & Réseaux</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jean SADON | Technicien Systèmes & Réseaux</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans"> 
-        <header class="bg-blue-900 text-white shadow-lg">
+    
+    <!-- 1. HEADER ET NAVIGATION (Lien PROJETS supprimé) -->
+    <header class="bg-blue-900 text-white shadow-lg">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
             <h1 class="text-2xl font-bold tracking-wider">
                 JEAN SADON | Infrastructure
             </h1>
             <nav>
+                <!-- Ne garde que Compétences et Contact -->
                 <a href="#competences" class="text-sm font-semibold hover:text-blue-300 ml-6 transition duration-150">COMPÉTENCES</a>
-                <a href="#projets" class="text-sm font-semibold hover:text-blue-300 ml-6 transition duration-150">PROJETS</a>
                 <a href="#contact" class="text-sm font-semibold hover:text-blue-300 ml-6 transition duration-150">CONTACT</a>
             </nav>
         </div>
-  </header>
+    </header>
 
-    <section id="profil" class="bg-white shadow-xl py-20 px-6 text-center">
-    <h2 class="text-5xl font-extrabold text-blue-800 tracking-tight">
-      Technicien Systèmes & Réseaux. Diagnostic et Maintenance Critique.
-    </h2>
-    <p class="mt-6 text-xl text-gray-600 max-w-2xl mx-auto">
-      Expertise factuelle en **Windows Server (AD, GPO), Virtualisation (Hyper-V/VMware), Routage VLAN et Sécurité Firewall (pfSense/Fortinet)**.
-    </p>
-    <p class="mt-2 text-lg text-gray-500 max-w-2xl mx-auto">
-      Approche basée sur l'analyse structurée et la mise en œuvre de procédures vérifiables.
-    </p>
-    <a href="#contact" class="mt-10 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-md shadow-md transition duration-300">
-      Demander un Audit
-    </a>
-  </section>
+    <!-- 2. SECTION PROFIL (HERO) - Astérisques retirées et remplacées par <strong> -->
+    <section id="profil" class="bg-white shadow-xl py-20 px-6 text-center">
+        <h2 class="text-5xl font-extrabold text-blue-800 tracking-tight">
+            Technicien Systèmes & Réseaux. Diagnostic et Maintenance Critique.
+        </h2>
+        <p class="mt-6 text-xl text-gray-600 max-w-2xl mx-auto">
+            Expertise factuelle en <strong>Windows Server (AD, GPO), Virtualisation (Hyper-V/Proxmox), Routage VLAN et Sécurité Firewall (pfSense/Fortinet)</strong>.
+        </p>
+        <p class="mt-2 text-lg text-gray-500 max-w-2xl mx-auto">
+            Approche basée sur l'analyse structurée et la mise en œuvre de procédures vérifiables.
+        </p>
+        <a href="#contact" class="mt-10 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-md shadow-md transition duration-300">
+            Demander un Audit
+        </a>
+    </section>
 
-    <section id="competences" class="max-w-6xl mx-auto px-4 py-16 bg-gray-50">
-    <h2 class="text-3xl font-bold text-blue-800 mb-8 border-b-4 border-blue-600 pb-2 inline-block">🎯 Domaines d'Expertise Opérationnelle</h2>
-    <ul class="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-700">
-      <li class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-600">
-            <h3 class="text-xl font-semibold mb-2">Systèmes & Administration</h3>
-            <p class="text-sm">Windows Server (AD, DNS, DHCP), Linux, Gestion des politiques de sécurité (GPO), Sauvegardes (Veeam).</p>
-        </li>
-      <li class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-600">
-            <h3 class="text-xl font-semibold mb-2">Réseau & Sécurité</h3>
-            <p class="text-sm">VLAN, Routage dynamique, Firewall (pfSense/Fortinet), VPN IPsec/SSL, Analyse de trames.</p>
-        </li>
-      <li class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-600">
-            <h3 class="text-xl font-semibold mb-2">Virtualisation & Supervision</h3>
-            <p class="text-sm">Hyper-V, VMware ESXi, Installation et maintenance des hôtes. Supervision proactive (Zabbix/Prometheus).</p>
-        </li>
-    </ul>
-  </section>
+    <!-- 3. SECTION OFFRE FACTUELLE ET COMPÉTENCES CLÉS (Nouvelle structure détaillée) -->
+    <section id="competences" class="max-w-6xl mx-auto px-4 py-16 bg-gray-50">
+        <h2 class="text-3xl font-bold text-blue-800 mb-10 border-b-4 border-blue-600 pb-2 inline-block">🚀 Offre de Services Techniques</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-700">
+            
+            <!-- Bloc 1 : Systèmes, Virtualisation & Continuité (Proxmox inclus) -->
+            <article class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-600">
+                <h3 class="text-xl font-semibold mb-3 text-blue-800">Systèmes & Virtualisation Critique</h3>
+                <ul class="list-disc list-inside space-y-2 text-sm">
+                    <li>Administration <strong>Windows Server</strong> (AD, GPO, DNS, DHCP) et <strong>Linux</strong> (Debian/Ubuntu).</li>
+                    <li>Déploiement d'hyperviseurs : <strong>Hyper-V, VMware ESXi</strong> et <strong>Proxmox VE (PVE)</strong>.</li>
+                    <li>Mise en œuvre de solutions de <strong>Haute Disponibilité</strong> (Cluster HA) et <strong>Conteneurisation</strong> (Docker, LXC).</li>
+                    <li>Gestion des stratégies de <strong>Sauvegarde (Veeam)</strong> et de récupération d'urgence (DRP).</li>
+                </ul>
+            </article>
+            
+            <!-- Bloc 2 : Réseau, Routage & Sécurité -->
+            <article class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-600">
+                <h3 class="text-xl font-semibold mb-3 text-blue-800">Réseau, Routage & Sécurité Périmétrique</h3>
+                <ul class="list-disc list-inside space-y-2 text-sm">
+                    <li>Configuration avancée des switches L2/L3 (<strong>VLAN, routage statique/dynamique</strong>).</li>
+                    <li>Déploiement et gestion des firewalls : <strong>pfSense, Fortinet, IPsec/OpenVPN</strong>.</li>
+                    <li>Audit et sécurisation des accès Wi-Fi professionnels et des <strong>règles de flux</strong>.</li>
+                    <li><strong>Diagnostic et Analyse structurée</strong> des problèmes de latence et de connectivité.</li>
+                </ul>
+            </article>
+            
+            <!-- Bloc 3 : Supervision, Automatisation & Web Technique (Web inclus) -->
+            <article class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-600">
+                <h3 class="text-xl font-semibold mb-3 text-blue-800">Supervision & Plateformes Web</h3>
+                <ul class="list-disc list-inside space-y-2 text-sm">
+                    <li>Mise en place de solutions de <strong>Supervision proactive</strong> (Zabbix, Prometheus/Grafana).</li>
+                    <li><strong>Scripting d'administration</strong> pour l'automatisation (PowerShell, Bash).</li>
+                    <li>Hébergement et administration de plateformes Web performantes (NGINX/Apache).</li>
+                    <li>Intégration de sites <strong>responsives</strong> (Tailwind CSS, SSG) pour une performance optimale.</li>
+                </ul>
+            </article>
+            
+        </div>
+    </section>
 
-    <section id="projets" class="max-w-6xl mx-auto px-4 py-16">
-    <h2 class="text-3xl font-bold text-blue-800 mb-8 border-b-4 border-blue-600 pb-2 inline-block">📁 Preuves de Compétence (Études de Cas)</h2>
-    <p class="text-gray-600 italic">
-      Cette section documentera des projets réels sous forme d'analyse structurée : Problème > Diagnostic > Solution Technique > Résultat Vérifiable.
-    </p>
-      </section>
+    <!-- La SECTION PROJETS (4) est maintenant SUPPRIMÉE -->
 
-    <section id="contact" class="max-w-xl mx-auto px-4 py-12 bg-white rounded-lg shadow-lg">
-    <h2 class="text-2xl font-bold text-blue-800 mb-4 border-b border-gray-300 pb-2">📬 Contact Opérationnel</h2>
+    <!-- 5. SECTION CONTACT -->
+    <section id="contact" class="max-w-xl mx-auto px-4 py-12 bg-white rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold text-blue-800 mb-4 border-b border-gray-300 pb-2">📬 Contact Opérationnel</h2>
 
-        <div id="confirmation" class="bg-green-600 text-white font-semibold p-4 rounded-xl mb-4 text-center opacity-0 scale-95 transition duration-700 transform">
-      ✅ Merci pour votre message. Analyse de la demande en cours.
-    </div>
+        <div id="confirmation" class="bg-green-600 text-white font-semibold p-4 rounded-xl mb-4 text-center opacity-0 scale-95 transition duration-700 transform">
+            ✅ Merci pour votre message. Analyse de la demande en cours.
+        </div>
 
-    <form action="https://formspree.io/f/meogywgg" method="POST" class="bg-gray-100 p-6 rounded-xl space-y-4">
-      <input type="text" name="name" placeholder="Nom de l'entreprise ou contact" required class="w-full p-3 rounded border border-gray-300 bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500">
-      <input type="email" name="email" placeholder="Email professionnel" required class="w-full p-3 rounded border border-gray-300 bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500">
-      <textarea name="message" rows="5" placeholder="Objet de l'intervention ou du diagnostic requis" required class="w-full p-3 rounded border border-gray-300 bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-      <button type="submit" class="bg-blue-600 hover:bg-blue-800 text-white px-6 py-3 rounded-md font-semibold shadow-md transition duration-300 w-full">
-        Soumettre la Demande
-      </button>
-    </form>
-  </section>
+        <form action="https://formspree.io/f/meogywgg" method="POST" class="bg-gray-100 p-6 rounded-xl space-y-4">
+            <input type="text" name="name" placeholder="Nom de l'entreprise ou contact" required class="w-full p-3 rounded border border-gray-300 bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <input type="email" name="email" placeholder="Email professionnel" required class="w-full p-3 rounded border border-gray-300 bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <textarea name="message" rows="5" placeholder="Objet de l'intervention ou du diagnostic requis" required class="w-full p-3 rounded border border-gray-300 bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            <button type="submit" class="bg-blue-600 hover:bg-blue-800 text-white px-6 py-3 rounded-md font-semibold shadow-md transition duration-300 w-full">
+                Soumettre la Demande
+            </button>
+        </form>
+    </section>
 
-    <footer class="text-center py-6 text-gray-500 bg-gray-800">
-    <p class="text-white">&copy; 2025 Jean SADON – Infrastructure IT | Rigueur Technique Garantie.</p>
-  </footer>
+    <!-- 6. FOOTER -->
+    <footer class="text-center py-6 text-gray-500 bg-gray-800">
+        <p class="text-white">&copy; 2025 Jean SADON – Infrastructure IT | Rigueur Technique Garantie.</p>
+    </footer>
 
-    <script>
-    // ... (Votre script JS Formspree ici, inchangé) ...
-  </script>
+    <!-- Script de confirmation Formspree -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.querySelector('form');
+            const confirmation = document.getElementById('confirmation');
+            
+            form.addEventListener('submit', async (e) => {
+                // Empêche la soumission classique pour gérer la redirection
+                e.preventDefault();
+                
+                const formData = new FormData(form);
+                
+                try {
+                    const response = await fetch(form.action, {
+                        method: form.method,
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (response.ok) {
+                        // Afficher la confirmation
+                        confirmation.classList.remove('opacity-0', 'scale-95');
+                        confirmation.classList.add('opacity-100', 'scale-100');
+                        
+                        // Cacher la confirmation après 5 secondes
+                        setTimeout(() => {
+                            confirmation.classList.remove('opacity-100', 'scale-100');
+                            confirmation.classList.add('opacity-0', 'scale-95');
+                        }, 5000);
+
+                        // Effacer le formulaire
+                        form.reset();
+                    } else {
+                        // Gérer l'erreur si la réponse n'est pas OK
+                        console.error('Erreur lors de la soumission du formulaire.');
+                        // Alternative : afficher un message d'erreur à la place de la confirmation
+                    }
+                } catch (error) {
+                    console.error('Erreur réseau ou lors de la soumission :', error);
+                    // Alternative : afficher un message d'erreur
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
